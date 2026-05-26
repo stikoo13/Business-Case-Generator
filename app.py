@@ -7,14 +7,11 @@ from risk_engine import get_risks
 from ai_generator import generate_business_case
 from doc_exporter import export_to_word, export_to_pdf
 
-hide_streamlit_style = """
-<style>
-#MainMenu {visibility: hidden;}
-footer {visibility: hidden;}
-header {visibility: hidden;}
-</style>
-"""
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+st.set_page_config(
+    page_title="NEXIQ",
+    page_icon="",
+    layout="wide"
+)
 
 hide_streamlit_style = """
 <style>
@@ -25,9 +22,7 @@ header {visibility: hidden;}
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-st.set_page_config(page_title="AI Business Case Generator", layout="wide")
-
-st.title("AI Business Case Generator")
+st.title("NEXIQ - AI Business Case Generator")
 st.caption("Turn a business idea into a boardroom-ready proposal in minutes.")
 
 st.subheader("Fill in the details below")
