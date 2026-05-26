@@ -1,0 +1,7 @@
+streamlit
+groq
+python-docx
+plotly
+pandas
+reportlab
+python-dotenv
